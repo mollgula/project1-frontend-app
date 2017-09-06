@@ -1,0 +1,34 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+body {
+  display: block;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.img_block {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1px;
+}
+.img_block a {
+  display: block;
+}
+.caption {
+  margin: 0 0 1em 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+}
+#gallery {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 1px;
+}

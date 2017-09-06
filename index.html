@@ -1,60 +1,276 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html>
 
-    <!-- Bootstrap 4のCSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<title>template</title>
+	<link href="css/sample.css" rel="stylesheet" type="text/css">
+</head>
 
-    <!-- 日本語フォント用の設定 -->
-    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
-      }
-    </style>
-
-    <!-- タイトル -->
-    <title>テクノロジー（藤原）サンプル</title>
-  </head>
-
-  <body>
-    <div class="container">  <!-- Bootstrap 4用のタグ -->
-
-      <!-- 自分用のHTMLをここに書く -->
-
-      <h1>Hello, world!</h1>
-
-      <p>これはHTMLのサンプルです。</p>
-
-      <h2>入力</h2>
-      <form name="mainForm">
-        <div class="form-group">
-          <label for="input1">入力1</label>
-          <input id="input1" class="form-control" type="text" onchange="answer()"/>
-        </div>
-
-        <div class="form-group">
-          <label for="input2">入力2</label>
-          <input id="input2" class="form-control" type="text" onchange="answer()"/>
-        </div>
-      </form>
-
-      <h2>出力</h2>
-      <p>ここに出力したい</p>
-      <p id="output">ここに出力したい</p>
-
-
-      <!-- 自分用のHTMLはここまで -->
-
-    </div>  <!-- Bootstrap 4用のタグ -->
-
-    <!-- 外部のJavaScriptライブラリ -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-     <script src="main.js"></script>
-  </body>
+<body>
+	<header>
+		<div class="header-contents">
+			<h1>晩御飯の写真まとめ</h1>
+				<h2></h2>
+		</div>
+		<!-- /.header-contents -->
+	</header>
+	<div class="main-wrapper">
+		<section>
+			<div id="gallery">
+				<div id="pagination"></div>
+				<div class="img_block">
+					<a href="https://www.instagram.com/p/BXpxUewgzGe/" target="_blank">
+				<img src="https://www.instagram.com/p/BXpxUewgzGe/media?size=l" alt="">
+				<p class="caption">7月21日
+					<br>やよい軒　チキン南蛮定食</p>
+		</div>
+			<div class="img_block">
+				<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+					<img src="https://www.instagram.com/p/BXpxTHrgj-1/media?size=l" alt="">
+					<p class="caption">7月22日
+					<br>なか卵　牛丼ミニうどんセット</p>
+			</div>
+				<div class="img_block">
+					<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+						<img src="https://www.instagram.com/p/BXpxQ8SgUCT/media?size=l" alt="">
+						<p class="caption">7月23日
+						<br>卵うどん</p>
+				</div>
+					<div class="img_block">
+						<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+							<img src="https://www.instagram.com/p/BXpxSGBgQi_/media?size=l" alt="">
+							<p class="caption">7月24日
+							<br>カレーパスタ</p>
+					</div>
+						<div class="img_block">
+							<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+								<img src="https://www.instagram.com/p/BXpxO9ygJ7O/media?size=l" alt="">
+								<p class="caption">7月25日
+								<br>卵かけうどん</p>
+						</div>
+							<div class="img_block">
+								<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+									<img src="https://www.instagram.com/p/BXpxN9NAOZn/media?size=l" alt="">
+									<p class="caption">7月26日
+									<br>卵かけご飯</p>
+							</div>
+								<div class="img_block">
+									<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+										<img src="https://www.instagram.com/p/BXpxLv7gxPB/media?size=l" alt="">
+										<p class="caption">7月27日
+										<br>やよい軒　生姜焼き定食</p>
+								</div>
+									<div class="img_block">
+										<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+											<img src="https://www.instagram.com/p/BXpxKunAaBk/media?size=l" alt="">
+											<p class="caption">7月28日
+											<br>カレーパスタ</p>
+									</div>
+										<div class="img_block">
+											<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+												<img src="https://www.instagram.com/p/BXpxMrrgKKv/media?size=l" alt="">
+												<p class="caption">7月29日
+												<br>焼うどん（目玉焼き乗せ）</p>
+										</div>
+											<div class="img_block">
+												<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+													<img src="https://www.instagram.com/p/BXpxIxnA_zq/media?size=l" alt="">
+													<p class="caption">7月30日
+													<br>素うどん（胃もたれのため）</p>
+											</div>
+												<div class="img_block">
+													<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+														<img src="https://www.instagram.com/p/BXpxHnfAo0G/media?size=l" alt="">
+														<p class="caption">8月1日
+														<br>一風堂　白ラーメンと大炒飯</p>
+												</div>
+													<div class="img_block">
+														<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+															<img src="https://www.instagram.com/p/BXpxGXdgsCs/media?size=l" alt="">
+															<p class="caption">8月2日
+															<br>親子丼</p>
+													</div>
+														<div class="img_block">
+															<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																<img src="https://www.instagram.com/p/BXpxDtLAL1l/media?size=l" alt="">
+																<p class="caption">8月3日
+																<br>カレー</p>
+														</div>
+															<div class="img_block">
+																<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																	<img src="https://www.instagram.com/p/BXpxCr8g53s/media?size=l" alt="">
+																	<p class="caption">8月4日
+																	<br>カツオムライス</p>
+															</div>
+																<div class="img_block">
+																	<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																		<img src="https://www.instagram.com/p/BXpw_vigOrJ/media?size=l" alt="">
+																		<p class="caption">8月5日
+																		<br>太郎ラーメン　チーズトマトカレーラーメン</p>
+																</div>
+																	<div class="img_block">
+																		<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																			<img src="https://www.instagram.com/p/BYN-DFWA-G1/media?size=l" alt="">
+																			<p class="caption">8月6日
+																			<br>ご飯と春雨スープ（担々麺風）</p>
+																	</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BXpxBRugDTr/media?size=l" alt="">
+																				<p class="caption">8月7日
+																				<br>チキンカレーもどき</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BXpw-GEAUZX/media?size=l" alt="">
+																				<p class="caption">8月8日
+																				<br>ほっともっと　ご飯と銀鮭弁当おかずのみ</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BXpw8jlALqX/media?size=l" alt="">
+																				<p class="caption">8月9日
+																				<br>油そば（次の日胃もたれを起こす）</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BXpw7cfgg-9/media?size=l" alt="">
+																				<p class="caption">8月10日
+																				<br>きのこカレー</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BXpw6UpASKm/media?size=l" alt="">
+																				<p class="caption">8月11日
+																				<br>カルボナーラ</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPekMAkXO/media?size=l" alt="">
+																				<p class="caption">8月12日
+																				<br>大阪ビーフカツバーガーセット</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYOOCtigBkd/media?size=l" alt="">
+																				<p class="caption">8月13日
+																				<br>マルゲリータ</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYOOFfGA2qV/media?size=l" alt="">
+																				<p class="caption">8月14日
+																				<br>日田焼きそば</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPh3sArFJ/media?size=l" alt="">
+																				<p class="caption">8月15日
+																				<br>元祖野菜カレー</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYN_xR1gTrP/media?size=l" alt="">
+																				<p class="caption">8月16日
+																				<br>魚民</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPjKoAnbo/media?size=l" alt="">
+																				<p class="caption">8月17日
+																				<br>サウンド分野との親睦会</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPkPcAD1c/media?size=l" alt="">
+																				<p class="caption">8月18日
+																				<br>ナポリタン</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPlxlgR7Q/media?size=l" alt="">
+																				<p class="caption">8月19日
+																				<br>太郎ちゃんラーメン　上握りセット</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPnyMgUj7/media?size=l" alt="">
+																				<p class="caption">8月20日
+																				<br>吉野家　チーズ牛丼</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPokpg3fD/media?size=l" alt="">
+																				<p class="caption">8月21日
+																				<br>バーガーキング　ワッパーセット</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPpfCAZKl/media?size=l" alt="">
+																				<p class="caption">8月22日
+																				<br>ナポリタン</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPvyMgXPj/media?size=l" alt="">
+																				<p class="caption">8月23日
+																				<br>湯豆腐とソーセージとベーコン</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYNPyG7g-tG/media?size=l" alt="">
+																				<p class="caption">8月24日
+																				<br>キムチチャーハン</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYOBgFbgsp3/media?size=l" alt="">
+																			<p class="caption">8月25日
+																				<br>居酒屋</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYQQ8HDgj1R/media?size=l" alt="">
+																			<p class="caption">8月26日
+																				<br>焼き肉丼　豚ロース</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYTB9-sAuOU/media?size=l" alt="">
+																			<p class="caption">8月27日
+																				<br>チョコレートバー</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYWEE0cgxI6/media?size=l" alt="">
+																				<p class="caption">8月28日
+																				<br>ナポリタン</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYXu0Icgf6B/media?size=l" alt="">
+																				<p class="caption">8月29日
+																				<br>ナポリタン</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYcdqRlAhaa/media?size=l" alt="">
+																				<p class="caption">8月30日
+																				<br>ドライカレー</p>
+																		</div>
+																		<div class="img_block">
+																			<a href="https://www.instagram.com/kaisatousample/" target="_blank">
+																				<img src="https://www.instagram.com/p/BYdrlaDgcm7/media?size=l" alt="">
+																				<p class="caption">8月31日
+																				<br>ガパオライス</p>
+																		</div>
+</section>
+</div><!-- /.main-wrapper -->
+<footer></footer>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
+</body>
 </html>
